@@ -1,0 +1,55 @@
+﻿<Window x:Class="tic_tac_toe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tic_tac_toe"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="600"
+        Width="1000">
+    <Grid>
+        <Button x:Name="userVsUserButton"
+                Content="User-User"
+                HorizontalAlignment="Left"
+                Margin="156,257,0,0"
+                VerticalAlignment="Top"
+                Height="50"
+                Width="176"
+                Click="OnUserVsUserClicked" Background="#FFC87C7C" FontSize="24" />
+        <Button x:Name="userVsComputerButton"
+                Content="User-Computer"
+                HorizontalAlignment="Left"
+                Margin="448,254,0,0"
+                VerticalAlignment="Top"
+                Height="56"
+                Width="236"
+                Click="OnUserVsComputerClicked" RenderTransformOrigin="2.967,6.887" Background="#FFC87C7C" FontSize="20" />
+        <Button x:Name="resumeButton"
+                Content="Resume Game"
+                Margin="566,427,229,0"
+                VerticalAlignment="Top"
+                Height="63"
+                Click="OnResumeGameClicked" Background="#FFC87C7C" FontSize="24" />
+        <Label x:Name="alertLabel"
+               HorizontalAlignment="Center"
+               Margin="0,410,0,0"
+               VerticalAlignment="Top"
+               Width="430"
+               Height="30" />
+        <TextBox x:Name="pageTextBox"
+                 HorizontalAlignment="Center"
+                 TextWrapping="Wrap"
+                 Text="Tic-Tac-Toe "
+                 VerticalAlignment="Top"
+                 Width="687"
+                 Height="120"
+                 TextAlignment="Center"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 FontWeight="Bold"
+                 FontSize="48" Background="#FF1E1010" Foreground="#FFE8DADA" />
+        <Label x:Name="Wants_to_play_" Content="Wants to play?" HorizontalAlignment="Left" Margin="285,125,0,0" VerticalAlignment="Top" Background="#FF5C1717" Foreground="#FFDDCFCF" FontSize="36" Height="71" Width="298" RenderTransformOrigin="-0.039,0.764"/>
+        <Label x:Name="Wants_to_play_1" Content="Wants to resume game?" HorizontalAlignment="Left" Margin="79,425,0,0" VerticalAlignment="Top" Background="#FF5C1717" Foreground="#FFDDCFCF" FontSize="36" Height="71" Width="421"/>
+    </Grid>
+</Window>
